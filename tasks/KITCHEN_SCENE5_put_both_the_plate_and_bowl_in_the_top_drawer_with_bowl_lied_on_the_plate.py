@@ -22,6 +22,7 @@ def main():
         goal_states=[
             ("RelaxedOn", "akita_black_bowl_1", "plate_1"),
             ("In", "plate_1", "white_cabinet_1_top_region"),
+            ("In", "akita_black_bowl_1", "white_cabinet_1_top_region")
         ]
     )
 

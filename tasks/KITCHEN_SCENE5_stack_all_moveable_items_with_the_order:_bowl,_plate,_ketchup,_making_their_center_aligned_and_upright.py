@@ -14,7 +14,7 @@ from libero.libero.benchmark.mu_creation import *
 
 def main():
     scene_name = "kitchen_scene5"
-    language = "Stack all moveable items with the order: bowl, plate, ketchup, making their center aligned and upright"
+    language = "Stack all moveable items with the order from bottom to top: bowl, plate, ketchup, making their center aligned and upright"
     register_task_info(
         language,
         scene_name=scene_name,

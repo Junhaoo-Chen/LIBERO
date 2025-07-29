@@ -13,7 +13,7 @@ from libero.libero.benchmark.mu_creation import *
 
 def main():
     scene_name = "kitchen_scene8"
-    language = "Put both moka pot flat on the table"
+    language = "Lay both moka pots flat on the table"
     register_task_info(
         language,
         scene_name=scene_name,
@@ -21,6 +21,8 @@ def main():
         goal_states=[
             ("AxisAlignedWithinWorldAxis", "moka_pot_1", "z", 85, 95, "z"),
             ("AxisAlignedWithinWorldAxis", "moka_pot_2", "z", 85, 95, "z"),
+            ("On", "moka_pot_1", "kitchen_table_tabletop_region"),
+            ("On", "moka_pot_2", "kitchen_table_tabletop_region"),
         ],
     )
     bddl_file_names, failures = generate_bddl_from_task_info()

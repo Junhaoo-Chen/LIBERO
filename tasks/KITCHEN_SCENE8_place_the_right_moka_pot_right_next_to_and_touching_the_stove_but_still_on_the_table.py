@@ -87,6 +87,7 @@ def main():
         scene_name=scene_name,
         objects_of_interest=["moka_pot_1", "moka_pot_2", "flat_stove_1"],
         goal_states=[
+            ("On", "flat_stove_1", "kitchen_table_flat_stove_init_region"),
             ("On", "moka_pot_1", "kitchen_table_tabletop_region"),
             ("InContact", "moka_pot_1", "flat_stove_1"),
         ],
